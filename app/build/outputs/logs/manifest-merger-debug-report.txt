@@ -1,0 +1,123 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:2:1-61:12
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:2:1-61:12
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:2:1-61:12
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:2:1-61:12
+	package
+		INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:6:5-74
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:6:22-71
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.BLUETOOTH_PRIVILEGED
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:11:5-13:58
+	xmlns:tools
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:13:9-55
+	tools:ignore
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:12:9-44
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:11:22-76
+uses-permission#android.permission.WRITE_SECURE_SETTINGS
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:17:5-19:58
+	xmlns:tools
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:19:9-55
+	tools:ignore
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:18:9-44
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:17:22-77
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:21:22-78
+application
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:23:5-60:19
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:23:5-60:19
+	android:extractNativeLibs
+		INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+	android:label
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:24:9-41
+	android:roundIcon
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:26:9-54
+	android:icon
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:25:9-43
+	android:theme
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:27:9-59
+activity#com.ptuchik.siri.MainActivity
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:29:9-36:20
+	android:exported
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:32:13-35:29
+action#android.intent.action.MAIN
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:34:27-74
+receiver#com.ptuchik.siri.ReviveReceiver
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:38:9-46:20
+	android:exported
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:40:13-36
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:39:13-43
+intent-filter#action:name:android.bluetooth.device.action.ACL_CONNECTED+action:name:android.bluetooth.device.action.ACL_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:41:13-45:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:42:17-79
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:42:25-76
+action#android.bluetooth.device.action.ACL_CONNECTED
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:43:17-88
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:43:25-85
+action#android.bluetooth.device.action.ACL_DISCONNECTED
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:44:17-91
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:44:25-88
+service#com.ptuchik.siri.KeyCatcherService
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:48:9-58:19
+	android:exported
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:50:13-37
+	android:permission
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:51:13-79
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:49:13-46
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:52:13-54:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:53:17-92
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:53:25-89
+meta-data#android.accessibilityservice
+ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:55:13-57:61
+	android:resource
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:57:17-58
+	android:name
+		ADDED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:56:17-60
+uses-sdk
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml

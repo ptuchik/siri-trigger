@@ -1,0 +1,7 @@
+#Thu Jul 02 23:21:11 AMT 2026
+base.0=/Volumes/Data/Sites/siri-trigger/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/Volumes/Data/Sites/siri-trigger/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
+path.0=0/classes.dex
+path.1=8/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

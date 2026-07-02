@@ -1,0 +1,116 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ptuchik.siritrigger"
+4    android:versionCode="7"
+5    android:versionName="1.0.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="33" />
+10
+11    <!-- Legacy (<= Android 11) -->
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:5:5-68
+12-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:5:22-65
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:6:5-74
+13-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:6:22-71
+14    <!-- Android 12+ -->
+15    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+15-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:8:5-76
+15-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:8:22-73
+16    <!--
+17         Only granted if installed as a privileged/system app or platform-signed.
+18         Harmless to declare; may be required by the BT service on some builds.
+19    -->
+20    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+20-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:11:5-13:58
+20-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:11:22-76
+21    <!--
+22         Lets the app enable its own accessibility service on head units that
+23         have no Accessibility settings screen. Only active after:
+24         adb shell pm grant <pkg> android.permission.WRITE_SECURE_SETTINGS
+25    -->
+26    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+26-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:17:5-19:58
+26-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:17:22-77
+27    <!-- Re-kick the accessibility service after head-unit restarts. -->
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:21:5-81
+28-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:21:22-78
+29
+30    <application
+30-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:23:5-60:19
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:icon="@mipmap/ic_launcher"
+33-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:25:9-43
+34        android:label="@string/app_name"
+34-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:24:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:26:9-54
+36        android:theme="@android:style/Theme.DeviceDefault" >
+36-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:27:9-59
+37        <activity
+37-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:29:9-36:20
+38            android:name="com.ptuchik.siri.MainActivity"
+38-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:30:13-41
+39            android:exported="true" >
+39-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:31:13-36
+40            <intent-filter>
+40-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:32:13-35:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:33:17-69
+41-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:33:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:34:17-77
+43-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:34:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <receiver
+47-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:38:9-46:20
+48            android:name="com.ptuchik.siri.ReviveReceiver"
+48-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:39:13-43
+49            android:exported="true" >
+49-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:40:13-36
+50            <intent-filter>
+50-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:41:13-45:29
+51                <action android:name="android.intent.action.BOOT_COMPLETED" />
+51-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:42:17-79
+51-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:42:25-76
+52                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+52-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:43:17-88
+52-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:43:25-85
+53                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+53-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:44:17-91
+53-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:44:25-88
+54            </intent-filter>
+55        </receiver>
+56
+57        <service
+57-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:48:9-58:19
+58            android:name="com.ptuchik.siri.KeyCatcherService"
+58-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:49:13-46
+59            android:exported="false"
+59-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:50:13-37
+60            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+60-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:51:13-79
+61            <intent-filter>
+61-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:52:13-54:29
+62                <action android:name="android.accessibilityservice.AccessibilityService" />
+62-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:53:17-92
+62-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:53:25-89
+63            </intent-filter>
+64
+65            <meta-data
+65-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:55:13-57:61
+66                android:name="android.accessibilityservice"
+66-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:56:17-60
+67                android:resource="@xml/keycatcher_config" />
+67-->/Volumes/Data/Sites/siri-trigger/app/src/main/AndroidManifest.xml:57:17-58
+68        </service>
+69    </application>
+70
+71</manifest>

@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnA11y
+id btnSave
+id btnTest
+id chkDebug
+id chkDiscovery
+id editKeycode
+id status
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string a11y_description
+string app_name
+xml keycatcher_config

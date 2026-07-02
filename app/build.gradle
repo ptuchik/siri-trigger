@@ -8,14 +8,33 @@ android {
         applicationId "com.ptuchik.siritrigger"
         minSdk 26          // DiLink 5.0 is expected to be >= Android 10/11
         targetSdk 33
-        versionCode 1
-        versionName "0.1"
+        versionCode 7
+        versionName "1.0.5"
+    }
+    signingConfigs {
+        release {
+            // Personal-use key; checked in so any machine can build updates
+            // that install over the existing app.
+            storeFile rootProject.file('release.keystore')
+            storePassword 'siritrigger'
+            keyAlias 'siritrigger'
+            keyPassword 'siritrigger'
+        }
     }
     buildTypes {
-        release { minifyEnabled false }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "siri-trigger-${variant.versionName}.apk"
+        }
     }
 }
