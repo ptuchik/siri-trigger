@@ -152,7 +152,14 @@ public class HfpSiriTrigger {
         }
     }
 
-    /** @return human-readable result for toasts / the test screen */
+    /**
+     * @return human-readable result for toasts / the test screen.
+     *
+     * Deliberately does NOT touch the audio route: Siri answering over A2DP
+     * (media channel) is accepted behavior. An SCO-first variant (bring up
+     * the telephony link before +BVRA) was tried in v1.0.4 and rejected —
+     * it added latency and was unstable. Don't reintroduce it.
+     */
     public String triggerSiri() {
         ensureBound();
         if (headsetClientProxy == null) {
@@ -173,6 +180,7 @@ public class HfpSiriTrigger {
                 return "HEADSET_CLIENT proxy is up but reports no connected AG device. "
                         + "The phone-call link may be handled outside the Android stack.";
             }
+
             Method m = headsetClientProxy.getClass()
                     .getMethod("startVoiceRecognition", BluetoothDevice.class);
             Object result = m.invoke(headsetClientProxy, phone);

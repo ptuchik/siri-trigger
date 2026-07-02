@@ -25,8 +25,8 @@ Open the project in Android Studio and Build → Build APK, or:
     ./gradlew assembleRelease
 
 The signed production APK lands at
-`app/build/outputs/apk/release/siri-trigger.apk` (signing uses the
-checked-in personal-use `release.keystore`). Install on the head unit
+`app/build/outputs/apk/release/siri-trigger-<version>.apk` (signing uses
+the checked-in personal-use `release.keystore`). Install on the head unit
 (ADB or file manager sideload). Fresh installs default to silent live
 mode; turn on "Debug mode" in the app when diagnosing.
 

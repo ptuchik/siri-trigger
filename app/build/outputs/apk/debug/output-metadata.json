@@ -11,9 +11,9 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 4,
-      "versionName": "1.0.2",
-      "outputFile": "siri-trigger.apk"
+      "versionCode": 7,
+      "versionName": "1.0.5",
+      "outputFile": "siri-trigger-1.0.5.apk"
     }
   ],
   "elementType": "File",

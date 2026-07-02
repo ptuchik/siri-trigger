@@ -8,8 +8,8 @@ android {
         applicationId "com.ptuchik.siritrigger"
         minSdk 26          // DiLink 5.0 is expected to be >= Android 10/11
         targetSdk 33
-        versionCode 4
-        versionName "1.0.2"
+        versionCode 7
+        versionName "1.0.5"
     }
     signingConfigs {
         release {
@@ -34,7 +34,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "siri-trigger.apk"
+            outputFileName = "siri-trigger-${variant.versionName}.apk"
         }
     }
 }
