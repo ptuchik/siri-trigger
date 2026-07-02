@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Siri-style waveform: overlapping gradient sound waves on dark background -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- big wave: magenta → violet -->
+    <path
+        android:pathData="M20,54 C31,26 43,26 54,54 C65,82 77,82 88,54"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startColor="#FF375F"
+                android:centerColor="#BF5AF2"
+                android:endColor="#5E5CE6"
+                android:startX="20" android:startY="54"
+                android:endX="88" android:endY="54"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- mirrored wave: cyan → blue -->
+    <path
+        android:pathData="M20,54 C31,82 43,82 54,54 C65,26 77,26 88,54"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startColor="#64D2FF"
+                android:centerColor="#0A84FF"
+                android:endColor="#5E5CE6"
+                android:startX="20" android:startY="54"
+                android:endX="88" android:endY="54"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- inner soft wave: green → teal -->
+    <path
+        android:pathData="M26,54 C36,42 46,42 54,54 C62,66 72,66 82,54"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startColor="#30D158"
+                android:centerColor="#66D4CF"
+                android:endColor="#64D2FF"
+                android:startX="26" android:startY="54"
+                android:endX="82" android:endY="54"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- center baseline dot glow -->
+    <path
+        android:pathData="M54,54 m-2.5,0 a2.5,2.5 0 1,1 5,0 a2.5,2.5 0 1,1 -5,0"
+        android:fillColor="#FFFFFF" />
+</vector>

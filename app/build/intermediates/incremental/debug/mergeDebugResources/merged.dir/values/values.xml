@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="a11y_description">Watches for the steering-wheel mic button (long press) and triggers Siri on the HFP-connected iPhone. Discovery mode logs keycodes so you can identify the button.</string>
-    <string name="app_name">Siri Trigger</string>
-</resources>

@@ -27,17 +27,23 @@
         android:text="Open Accessibility settings (enable KeyCatcher)" />
 
     <CheckBox
-        android:id="@+id/chkDiscovery"
+        android:id="@+id/chkDebug"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Discovery mode (toast every keycode seen)" />
+        android:text="Debug mode (toasts + logs; uncheck for silent live mode)" />
+
+    <CheckBox
+        android:id="@+id/chkDiscovery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discovery mode (toast every keycode seen; debug only)" />
 
     <EditText
         android:id="@+id/editKeycode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Trigger keycode (e.g. 231 = VOICE_ASSIST)"
+        android:hint="Trigger keycode (312 = BYD SWC voice button)"
         android:inputType="number" />
 
     <Button
