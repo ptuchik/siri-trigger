@@ -1,0 +1,8 @@
+com.ptuchik.siri.app-pngs-0 /Volumes/Data/Sites/siri-trigger/app/build/generated/res/pngs/debug
+com.ptuchik.siri.app-resValues-1 /Volumes/Data/Sites/siri-trigger/app/build/generated/res/resValues/debug
+com.ptuchik.siri.app-updated_navigation_xml-2 /Volumes/Data/Sites/siri-trigger/app/build/generated/updated_navigation_xml/debug
+com.ptuchik.siri.app-packageDebugResources-3 /Volumes/Data/Sites/siri-trigger/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.ptuchik.siri.app-packageDebugResources-4 /Volumes/Data/Sites/siri-trigger/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.ptuchik.siri.app-debug-5 /Volumes/Data/Sites/siri-trigger/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.ptuchik.siri.app-debug-6 /Volumes/Data/Sites/siri-trigger/app/src/debug/res
+com.ptuchik.siri.app-main-7 /Volumes/Data/Sites/siri-trigger/app/src/main/res

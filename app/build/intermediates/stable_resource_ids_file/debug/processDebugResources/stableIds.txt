@@ -1,0 +1,10 @@
+com.ptuchik.siritrigger:string/app_name = 0x7f030001
+com.ptuchik.siritrigger:string/a11y_description = 0x7f030000
+com.ptuchik.siritrigger:id/editKeycode = 0x7f010004
+com.ptuchik.siritrigger:id/chkDiscovery = 0x7f010003
+com.ptuchik.siritrigger:id/btnSave = 0x7f010001
+com.ptuchik.siritrigger:id/status = 0x7f010005
+com.ptuchik.siritrigger:id/btnTest = 0x7f010002
+com.ptuchik.siritrigger:xml/keycatcher_config = 0x7f040000
+com.ptuchik.siritrigger:layout/activity_main = 0x7f020000
+com.ptuchik.siritrigger:id/btnA11y = 0x7f010000

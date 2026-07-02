@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ptuchik.siri.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "/Volumes/Data/Sites/siri-trigger/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "105,55",
+                        "endColumns": "207,49",
+                        "endOffsets": "308,100"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,263",
+                        "endColumns": "207,49",
+                        "endOffsets": "258,308"
+                    }
+                }
+            ]
+        }
+    ]
+}

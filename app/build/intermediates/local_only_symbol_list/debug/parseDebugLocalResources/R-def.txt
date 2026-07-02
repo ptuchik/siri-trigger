@@ -1,0 +1,12 @@
+R_DEF: Internal format may change without notice
+local
+id btnA11y
+id btnSave
+id btnTest
+id chkDiscovery
+id editKeycode
+id status
+layout activity_main
+string a11y_description
+string app_name
+xml keycatcher_config

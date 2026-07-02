@@ -8,8 +8,8 @@ A diagnostic Android app for a BYD DiLink car head unit. **The final result this
 
 ## Build
 
-- No Gradle wrapper is checked in. AGP is 7.4.2, which requires Gradle 7.5–8.0 — a newer system Gradle (e.g. 9.x) will not build this project. Build via Android Studio, or `gradle assembleDebug` with a compatible Gradle.
-- Java 8 source/target, compileSdk 33, minSdk 26. Plain Java, no Kotlin, no dependencies, no tests.
+- `./gradlew assembleDebug` — AGP 8.10.1 with a Gradle 8.13 wrapper (requires JDK 17–21 to run; Android Studio's embedded JBR works: `JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"`).
+- Java 8 source/target, compileSdk 33, minSdk 26. Plain Java, no Kotlin, no dependencies, no tests. `applicationId` is `com.ptuchik.siritrigger` (hyphens are invalid in Android application IDs); the Java `namespace` is `com.ptuchik.siri` — they intentionally differ.
 - Install output (`app/build/outputs/apk/debug/`) on the head unit via ADB or file-manager sideload.
 
 ## Architecture
@@ -21,8 +21,6 @@ Three classes in `app/src/main/java/com/ptuchik/siri/`, two entry points:
 - **`MainActivity`** — manual test button (fires the HFP trigger directly, bypassing the key path), shortcut to Accessibility settings, and settings editor.
 
 The two components communicate only through SharedPreferences: file `"siri"` (`KeyCatcherService.PREFS`), keys `discovery_mode` (bool) and `trigger_keycode` (int, default 231 = `KEYCODE_VOICE_ASSIST`). MainActivity writes, the service reads on every key event.
-
-`applicationId` (`app/build.gradle`) and the Java `namespace` (`com.ptuchik.siri`) intentionally differ; the manifest also still carries a legacy `package` attribute that AGP ignores in favor of `namespace`.
 
 ## Testing / debugging
 
