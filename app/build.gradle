@@ -5,7 +5,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.ptuchik.siri"
+        applicationId "com.ptuchik.siritrigger"
         minSdk 26          // DiLink 5.0 is expected to be >= Android 10/11
         targetSdk 33
         versionCode 1
