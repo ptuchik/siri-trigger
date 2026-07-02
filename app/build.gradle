@@ -1,0 +1,21 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.ptuchik.siri'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.ptuchik.siri"
+        minSdk 26          // DiLink 5.0 is expected to be >= Android 10/11
+        targetSdk 33
+        versionCode 1
+        versionName "0.1"
+    }
+    buildTypes {
+        release { minifyEnabled false }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
